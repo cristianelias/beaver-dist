@@ -10,6 +10,8 @@ engineering mechanism.
 
 Product site: [beaver-worktrees.cristian-ricardo-eli.chatgpt.site](https://beaver-worktrees.cristian-ricardo-eli.chatgpt.site)
 
+Launch feedback: [Beaver v0.9.4 feedback](https://github.com/cristianelias/beaver-dist/issues/1)
+
 ## Install
 
 macOS and Linux:
