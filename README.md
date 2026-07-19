@@ -8,6 +8,8 @@ Native executables can still be inspected and disassembled. This distribution
 boundary prevents publication of the source tree; it is not an anti-reverse-
 engineering mechanism.
 
+Product site: [beaver-worktrees.cristian-ricardo-eli.chatgpt.site](https://beaver-worktrees.cristian-ricardo-eli.chatgpt.site)
+
 ## Install
 
 macOS and Linux:
