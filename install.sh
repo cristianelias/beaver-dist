@@ -57,6 +57,7 @@ staged="$(mktemp "$BIN_DIR/.beaver-install.XXXXXX")"
 install -m 755 "$tmp/beaver" "$staged"
 mv -f "$staged" "$BIN_DIR/beaver"
 staged=""
+"$BIN_DIR/beaver" __legacy-cleanup
 echo "installed $BIN_DIR/beaver ($("$BIN_DIR/beaver" --version))"
 
 case ":$PATH:" in
@@ -71,10 +72,3 @@ next step — enable the cd integration (once):
   printf '\n# beaver — git worktree pool manager\neval "$(beaver init zsh)"\n' >> ~/.zshrc && exec zsh
 EOF
 fi
-
-cat <<'EOF'
-
-teach the coding agents on this machine to use the pool (idempotent):
-  beaver init-agents                  # writes the beaver block into agent memory files
-  beaver init-agents --claude-hooks   # + route Claude Code's own worktrees through the pool
-EOF
